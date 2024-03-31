@@ -108,7 +108,22 @@ const login = async(req,res)=>{
 
     });
 }
+
+
+const prueba = async (req, res) => {
+   
+        
+   
+        return res.status(200).json({
+            status: "succes",
+            message: "Prueba completada",
+            usuario:req.user
+        });
+  
+}
+
 module.exports = {
     register,
-    login
+    login,
+    prueba
 };
